@@ -1,0 +1,51 @@
+#info .container .content {
+  padding: clamp(1rem, 4vw, 2rem);
+  background-color: var(--colors);
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "capacity view" "feature feature";
+}
+#info .container .content .capacity-wrapper {
+  grid-area: capacity;
+}
+#info .container .content .view-wrapper {
+  grid-area: view;
+}
+#info .container .content .feature-wrapper {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+  grid-area: feature;
+}
+#info .container .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+#info .container .content > div .items-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: clamp(0.2rem, 4vw, 0.8rem);
+}
+#info .container .content > div .items-wrapper .info-item {
+  color: white;
+}
+#info .container .content > div.feature-wrapper .items-wrapper {
+  grid-template-columns: repeat(2, 1fr);
+}
+#info .container .content > div .title {
+  color: white;
+  font-family: var(--primarytext);
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  #info .container .content > div .title {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=info.css.map */

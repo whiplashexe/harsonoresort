@@ -1,0 +1,71 @@
+#intro
+    .intro-image
+        width: 100%
+        aspect-ratio: 16/9
+        @media (min-width: 768px)
+            aspect-ratio: 16/5
+        object-fit: cover
+
+    .container
+        .content
+            width: 100%
+            display: grid 
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(2, auto)
+            gap: clamp(3rem, 6vw, 4rem)
+            grid-template-areas: 'contenta' 'image' 
+            @media (min-width: 768px) 
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(1, auto)
+                grid-template-areas: 'image contenta'
+
+            .content-1
+                grid-area: contenta
+                display: flex               
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                gap: 2rem
+                @media (min-width: 768px)
+                    justify-content: center 
+                    align-items: start
+
+
+                .title
+                    color: var(--color2)
+                    text-align: center
+                    font-family: var(--primarytext)
+                    font-size: 1.4rem
+                    @media (min-width: 768px)
+                        text-align: start
+                        font-size: 2rem
+
+                .description
+                    color: var(--color2)
+                    font-size: 1rem
+                    line-height: 1.6
+                    text-align: justify 
+                    max-width: 768px
+
+                .cta
+                    background-color: var(--colors)
+                    text-decoration: none
+                    color: white
+                    font-family: var(--primarytext)
+                    font-size: 1rem
+                    padding: 12px 28px
+                    @media (min-width: 768px)
+                        font-size: 1.2rem
+
+            .image
+                grid-area: image
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    width: 100%
+                    aspect-ratio: 1/1
+                    object-fit: cover
+                        
+            
+                

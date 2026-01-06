@@ -1,0 +1,108 @@
+#intro .intro-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+@media (min-width: 768px) {
+  #intro .intro-image {
+    aspect-ratio: 16/5;
+  }
+}
+#intro .intro-image {
+  object-fit: cover;
+}
+#intro .container .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: clamp(3rem, 6vw, 4rem);
+  grid-template-areas: "contenta" "image" "contentb";
+}
+@media (min-width: 768px) {
+  #intro .container .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "contenta contenta" "image contentb";
+  }
+}
+#intro .container .content .content-1 {
+  grid-area: contenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#intro .container .content .content-1 .title {
+  color: var(--color2);
+  text-align: center;
+  font-family: var(--primarytext);
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #intro .container .content .content-1 .title {
+    font-size: 2rem;
+  }
+}
+#intro .container .content .content-1 .description {
+  color: var(--color2);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 768px;
+}
+#intro .container .content .content-2 {
+  grid-area: contentb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+@media (min-width: 768px) {
+  #intro .container .content .content-2 {
+    align-items: start;
+  }
+}
+#intro .container .content .content-2 .title {
+  color: var(--color2);
+  text-align: center;
+  font-family: var(--primarytext);
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  #intro .container .content .content-2 .title {
+    font-size: 2rem;
+    text-align: start;
+  }
+}
+#intro .container .content .content-2 .description {
+  color: var(--color2);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 768px;
+}
+@media (min-width: 768px) {
+  #intro .container .content .content-2 .description {
+    text-align: start;
+  }
+}
+#intro .container .content .image {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .container .content .image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  #intro .container .content .image img {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=intro.css.map */
