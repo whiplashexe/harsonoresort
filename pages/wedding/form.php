@@ -34,7 +34,10 @@
                         <input type="text" placeholder="Estimation Budget">
                     </label>
                     <label for="" class="form-et">
-                        <input type="text" placeholder="Event Type">
+                        <select placeholder="Event Type">
+                            <option value="Event 1">Event 1</option>
+                            <option value="Event 2">Event 2</option>
+                        </select>
                     </label>
                     <label for="" class="form-ms">
                         <textarea placeholder="Type your Message"></textarea>

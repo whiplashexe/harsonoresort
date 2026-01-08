@@ -1,0 +1,14 @@
+#intro .intro-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+@media (min-width: 768px) {
+  #intro .intro-image {
+    aspect-ratio: 16/5;
+  }
+}
+#intro .intro-image {
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=intro.css.map */

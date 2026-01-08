@@ -60,6 +60,14 @@
   font-size: 1rem;
   font-family: var(--primarytext);
 }
+#form .container .content .content-wrapper form > label select {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--primarytext);
+}
 #form .container .content .content-wrapper form > label input::placeholder, #form .container .content .content-wrapper form label textarea::placeholder {
   font-family: var(--primarytext);
   font-size: 1rem;
