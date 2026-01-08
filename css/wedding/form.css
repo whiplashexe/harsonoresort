@@ -1,0 +1,127 @@
+#form .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  gap: 2rem;
+}
+#form .container .content .form-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+#form .container .content .form-header > * {
+  text-align: center;
+}
+#form .container .content .form-header .title {
+  font-family: var(--primarytext);
+  font-size: 1.4rem;
+}
+#form .container .content .form-header p {
+  font-family: var(--subtext);
+  line-height: 1.6;
+}
+#form .container .content .content-wrapper {
+  padding: clamp(1rem, 4vw, 2rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #F1F1F1;
+}
+#form .container .content .content-wrapper .title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: black;
+  font-family: var(--primarytext);
+}
+#form .container .content .content-wrapper form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: "fn" "em" "ph" "dt" "ep" "eb" "et" "ms" "sb";
+  gap: 0.2rem;
+}
+@media (min-width: 768px) {
+  #form .container .content .content-wrapper form {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "fn fn fn fn fn fn" "em em em ph ph ph" "dt dt dt dt dt dt" "ep ep eb eb et et" "ms ms ms ms ms ms" "sb sb sb sb sb sb";
+  }
+}
+#form .container .content .content-wrapper form > label input, #form .container .content .content-wrapper form label textarea {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-family: var(--primarytext);
+}
+#form .container .content .content-wrapper form > label input::placeholder, #form .container .content .content-wrapper form label textarea::placeholder {
+  font-family: var(--primarytext);
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.2);
+}
+#form .container .content .content-wrapper form .form-fn {
+  grid-area: fn;
+}
+#form .container .content .content-wrapper form .form-em {
+  grid-area: em;
+}
+#form .container .content .content-wrapper form .form-ph {
+  grid-area: ph;
+}
+#form .container .content .content-wrapper form .form-dt {
+  grid-area: dt;
+}
+#form .container .content .content-wrapper form .form-ep {
+  grid-area: ep;
+}
+#form .container .content .content-wrapper form .form-eb {
+  grid-area: eb;
+}
+#form .container .content .content-wrapper form .form-et {
+  grid-area: et;
+}
+#form .container .content .content-wrapper form .form-ms {
+  grid-area: ms;
+}
+#form .container .content .content-wrapper form .form-sb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: sb;
+}
+#form .container .content .content-wrapper form .form-sb button {
+  background-color: #646569;
+  border: none;
+  padding: 8px 32px;
+  font-family: var(--primarytext);
+  color: white;
+  font-size: 1.2rem;
+}
+#form .container .content .content-wrapper .contact {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  #form .container .content .content-wrapper .contact {
+    justify-content: space-between;
+  }
+}
+#form .container .content .content-wrapper .contact p {
+  font-family: var(--primarytext);
+  color: #646569;
+  border-bottom: 1px solid #646569;
+}
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,103 @@
+#items
+    .container
+        .content
+            background-color: var(--colors)
+            padding: clamp(2rem, 4vw, 4rem)
+            display: flex
+            flex-direction: column
+            justify-content: start
+            align-items: stretch
+            gap: 3rem
+
+            .items-header
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-wrap: wrap
+                gap: 1rem
+                @media (min-width: 768px)
+                    justify-content: space-between 
+                
+                .nav-item
+                    font-family: var(--primarytext)
+                    background-color: transparent
+                    border: none
+                    text-transform: uppercase
+                    font-size: .9rem
+                    color: white
+                    cursor: pointer
+                    @media (min-width: 768px)
+                        font-size: 1.1rem
+                    &.active
+                        border-bottom: 1px solid white
+
+            .content-wrapper
+                display: none
+                &#tjampuhan-content
+                    display: flex 
+                gap: 4rem
+                flex-direction: column-reverse
+                justify-content: start
+                align-items: stretch
+                @media (min-width: 768px)
+                    flex-direction: row
+                    justify-content: center
+                    align-items: stretch 
+                    .images
+                        width: 50%
+                    .description-content
+                        width: 50% 
+
+                .images
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+                    align-items: stretch
+                    gap: 1rem
+                    img
+                        width: 100%
+                        object-fit: cover
+                        &.image-1
+                            aspect-ratio: 9/11
+                        &.image-2
+                            aspect-ratio: 16/9
+
+                .description-content
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: start
+                    gap: 2rem
+
+                    .title
+                        font-family: var(--primarytext)
+                        color: white
+                        font-size: 2rem
+                        @media (min-width: 768px)
+                            font-size: 4rem
+
+                    .description
+                        font-family: var(--subtext)
+                        color: white
+                        line-height: 1.7
+
+                    .ctas
+                        display: flex
+                        justify-content: start
+                        align-items: center
+                        gap: 1rem
+                        flex-wrap: wrap
+
+                        .cta
+                            text-decoration: none
+                            color: var(--colors)
+                            text-transform: uppercase
+                            font-family: var(--primarytext)
+                            background-color: var(--color3)
+                            font-size: 1rem
+                            padding: 12px 32px
+
+
+                    
+                            
+                    

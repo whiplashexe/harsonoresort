@@ -1,0 +1,53 @@
+#meeting
+    .container
+        .content
+            padding: clamp(2rem, 4vw, 3rem)
+            background-color: var(--colors)
+            display: flex
+            gap: clamp(2rem, 4vw, 3rem)
+            flex-direction: column-reverse
+            justify-content: start
+            align-items: stretch
+            @media (min-width:768px)
+                flex-direction: row 
+                justify-content: center 
+                align-items: center
+
+                .image-wrapper
+                    width: 50%
+
+                .content-wrapper
+                    width: 50%
+
+            .image-wrapper
+                img
+                    width: 100%
+
+            .content-wrapper
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                gap: 2rem
+
+                .title
+                    text-align: center
+                    font-family: var(--primarytext)
+                    color: white
+                    font-size: 1.3rem
+                    @media (min-width: 768px) 
+                        font-size: 1.8rem
+
+                .description 
+                    text-align: center
+                    font-family: var(--subtext)
+                    color: white
+                    line-height: 1.4
+
+                .cta
+                    background-color: var(--color3)
+                    text-decoration: none
+                    color: var(--color2)
+                    padding: 10px 24px
+                    font-family: var(--primarytext)
+            

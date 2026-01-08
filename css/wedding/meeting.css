@@ -1,0 +1,58 @@
+#meeting .container .content {
+  padding: clamp(2rem, 4vw, 3rem);
+  background-color: var(--colors);
+  display: flex;
+  gap: clamp(2rem, 4vw, 3rem);
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: stretch;
+}
+@media (min-width: 768px) {
+  #meeting .container .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #meeting .container .content .image-wrapper {
+    width: 50%;
+  }
+  #meeting .container .content .content-wrapper {
+    width: 50%;
+  }
+}
+#meeting .container .content .image-wrapper img {
+  width: 100%;
+}
+#meeting .container .content .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#meeting .container .content .content-wrapper .title {
+  text-align: center;
+  font-family: var(--primarytext);
+  color: white;
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  #meeting .container .content .content-wrapper .title {
+    font-size: 1.8rem;
+  }
+}
+#meeting .container .content .content-wrapper .description {
+  text-align: center;
+  font-family: var(--subtext);
+  color: white;
+  line-height: 1.4;
+}
+#meeting .container .content .content-wrapper .cta {
+  background-color: var(--color3);
+  text-decoration: none;
+  color: var(--color2);
+  padding: 10px 24px;
+  font-family: var(--primarytext);
+}
+
+/*# sourceMappingURL=meeting.css.map */

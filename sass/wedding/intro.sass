@@ -1,0 +1,40 @@
+#intro
+    .intro-image
+        width: 100%
+        aspect-ratio: 16/9
+        @media (min-width: 768px)
+            aspect-ratio: 16/5
+        object-fit: cover
+
+    .container
+        .content
+            width: 100%
+
+            .content-1
+                grid-area: contenta
+                display: flex               
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                gap: 2rem
+
+                .title
+                    color: var(--color2)
+                    text-align: center
+                    font-family: var(--primarytext)
+                    font-size: 1.4rem
+                    @media (min-width: 768px)
+                        font-size: 2rem
+
+                    span
+                        font-size: 1.2rem
+
+                .description
+                    color: var(--color2)
+                    font-size: 1rem
+                    line-height: 1.6
+                    text-align: center
+                    max-width: 768px
+
+
+                

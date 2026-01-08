@@ -1,0 +1,116 @@
+
+#wedding-packages
+    .container
+        .content
+            background-color: var(--colors)
+            padding: clamp(1rem, 4vw, 2rem)
+            display: flex
+            flex-direction: column
+            justify-content: start
+            align-items: stretch
+            gap: 2rem
+            .wedding-packages-header
+                display: flex
+                flex-direction: column
+                justify-content: center
+                gap: 1rem
+                align-items: center
+
+                .title
+                    color: white
+                    text-align: center
+                    font-family: var(--primarytext)
+                    font-size: 1.4rem
+                    @media (min-width: 768px)
+                        font-size: 2rem
+
+            .card-wrapper
+                width: 100%
+                display: grid
+                grid-template-columns: repeat(1, 1fr)
+                gap: clamp(1rem, 4vw, 1.4rem)
+
+                @media (min-width: 768px)
+                    grid-template-columns: repeat(2, 1fr)
+                    
+                .wedding-card
+                    display: flex
+                    aspect-ratio: 16/12
+                    flex-direction: column
+                    position: relative
+                    justify-content: start
+                    align-items: stretch
+
+                    .image-wrapper
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        top: 0
+                        z-index: 1
+
+                        img
+                            width: 100%
+                            object-fit: cover
+                            height: 100%
+
+                    .overlay
+                        position: absolute
+                        width: 100%
+                        height: 100%
+                        left: 0
+                        top: 0
+                        z-index: 2
+                        background-color: black
+                        opacity: 0.4
+                        
+
+                    .card-content
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        width: 100%
+                        padding: clamp(1rem, 4vw, 1.4rem)
+                        z-index: 3
+                        display: grid
+                        grid-template-columns: 1fr auto
+                        grid-template-rows: repeat(2, auto)
+                        grid-template-areas: 'title cta' 'desc cta'
+                        gap: 1rem
+
+                        .title
+                            grid-area: title
+                            font-family: var(--primarytext)
+                            color: white
+                            font-size: 1.2rem
+                            @media (min-width: 768px)
+                                font-size: 1.4rem
+
+                        .description
+                            grid-area: desc 
+                            color: white
+                            font-family: var(--primarytext)
+                            font-size: .8rem
+                            display: -webkit-box
+                            -webkit-box-orient: vertical
+                            -webkit-line-clamp: 2
+                            overflow: hidden
+
+                        .cta-wrapper
+                            grid-area: cta 
+                            display: flex
+                            justify-content: center
+                            align-items: center
+
+                            .cta
+                                color: white 
+                                width: 35px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                border-radius: 999em
+                                height: 35px
+                                color: var(--color2)
+                                background-color: white
+                                font-family: var(--primarytext)
+                                text-decoration: none
